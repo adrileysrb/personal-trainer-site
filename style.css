@@ -247,6 +247,8 @@
     color: var(--text);
     text-align: center;
     font-size: xx-large;
+    line-height: normal;
+    font-weight: 50;
 }
 
 .video-info p {
@@ -254,6 +256,8 @@
     text-align: justify;
     font-size: x-large;
     text-indent: 50px;
+    
+    font-weight: 50;
 }
 
 /* PLANS */
@@ -263,12 +267,13 @@
     width: 100%;
     flex-direction: column;
     align-items: center;
-    margin: 15px 0;
+    margin: 35px 0 120px 0;
 }
 
 .plans-title {
     margin-top: 2%;
     font-size: 3rem;
+    font-weight: 50;
 }
 
 .plans {
@@ -284,6 +289,7 @@
     flex-direction: column;
     align-items: center;
     border: 1px solid black;
+    border-radius: 5px;
     transition: 0.5s;
     padding: 1%;
 }
@@ -293,9 +299,10 @@
     flex-direction: column;
     align-items: center;
     border: 1px solid black;
+    border-radius: 5px;
     transition: 0.5s;
     padding: 1%;
-    box-shadow: 12px 8px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     transform: scale(1.1);
 }
 
@@ -303,6 +310,7 @@
     display: flex;
     flex-direction: column;
     border: 1px solid black;
+    border-radius: 5px;
     transition: 0.5s;
     padding: 1%; 
     box-sizing: border-box;
@@ -340,7 +348,7 @@
     width: 70%;
     background-color: black;
     height: 2px;
-    margin: 0px auto 3% auto;
+    margin: 15px auto 10px auto;
 }
 
 .card-plan-1:hover {
@@ -354,107 +362,150 @@
 }
 
 /* FOOTER */
-.wrapper-footer {
+
+.footer-text-title {
+    font-size: 3rem; text-align: center; margin: 0;
+}
+
+.background-footer {
+    background-color: rgba(128, 128, 128, 0.05);
+  }
+  
+  .social {
     width: 100%;
-}
-
-.footer-title {
-    text-align: center;
-    margin: 6% 0px 3% 0px;
-    font-size: 3rem;
-}
-
-.footer {
-    width: 100%;
-    border: 1px solid black;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.footer-contact h1, 
-.footer-contact h2{
-    font-size: 2rem;
-    padding: 20px;
-}
-
-.footer-contact h4 {
-    font-size: 2rem;
-}
-
-.social-media-footer-title {
-    display: flex;
-    flex-direction: column;
-    
-}
-
-.social-media-footer {
-    display: flex;
-}
-
-.social-media-footer i {
-    font-size: 3rem;
-    padding: 25px;
-    color: rgba(0, 0, 0, 0.9)
-}
-
-.social-media-footer li {
-    list-style-type: none;
-}
-
-.social-media-footer i:hover {
-    background-color: #000;
-    color: white;
-    border-radius: 15px;
-}
-
-.contact-card {
-    display: flex;
-    padding: 10px;
-    font-size:1.5rem;
-}
-
-.contact-card-icon {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    padding: 0 7% 0 7%;
-    font-size: xx-large;
-}
-
-.contact-card-info {
-    line-height: 1.2lh;
-}
-
-.contact-footer {
+    height: 150px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding: 1% 6% 0px 6%;
-}
-
-.footer2 {
-    display: grid;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0;
+    margin: 0px 0px 5px 0px;
+  }
+  
+  .social li {
+    list-style-type: none;
+  }
+  
+  .social a {
+    text-decoration: none;
+  }
+  
+  .social-item {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    width: 100%;
-    grid-template-columns: 50% 30%;
-}
+    align-items: center;
+  }
 
-.footer-aboutme {
-    font-size: 1.2rem;
-    padding: 0 10% 10% 0%;
-}
+  .social-item p {
+    margin: 10px;
+  }
+  
+  .social-item i {
+    font-size: 2rem;
+    margin: 0px 10px 10px 10px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+  }
+  
+  .social-item i:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  /**/
+  
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    margin: 10px 2px;
+    background-color: rgba(128, 128, 128, 0.1);
+  }
+  
+  .contact2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    background-color: rgba(128, 128, 128, 0.1);
+    padding: 25px 0;
+    margin: 10px 2px 15px 2px;
+  }
+  
+  .change {
+    display: grid;
+    grid-template-columns: 45% 30%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 1%;
+  }
+  
+  .contact-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 10px 0 10px;
+  }
+  
+  .contact-card p {
+    line-height: 0.1lh;
+  }
+  
+  .contact-card i {
+    color: black;
+    margin: 10px;
+  }
+  
+  .contact-card-line {
+    position: relative;
+    top: 10px;
+    width: 1px;
+    background-color: black;
+    height: 50%;
+    margin: auto 0;
+  }
+  
+  .title-line {
+    width: 70%;
+    background-color: black;
+    height: 2px;
+    margin: 15px auto;
+  }
+  
+  @media only screen and (max-width: 768px){
+    .footer-text-title {
+        font-size: 1.4rem;
+    }
+    .contact {
+      display: flex;
+    }
+    .contact2 {
+      display: none;
+    }
+  
+    .change {
+      display: flex;
+    }
 
-.footer-aboutme h1{
-    font-size: 1.2rem;
-    padding: 0 0 1% 0;
-}
-
-.footer-aboutme p {
-    text-indent: 40px;
-    text-align: justify;
-}
-
+    .wrapper-plans {
+        margin: 35px 0 35px 0;
+    }
+  }
+  
+  @media only screen and (min-width: 768px){
+    .contact {
+      display: none;
+    }
+    .contact2 {
+      display: grid;
+    }
+  }
 
 /**         RESPONSIVE           **/
 @media only screen and (max-width: 320px){
@@ -536,10 +587,6 @@
         font-size: 1.5rem;
     }
 
-    .contact-card-info h4 {
-        font-size: 0.7rem;
-    }
-
     .footer-aboutme h1 {
         font-size: 0.9rem;
     }
@@ -557,13 +604,6 @@
         padding: 8px;
     }
 
-    .contact-card-icon {
-        font-size: large;
-    }
-    
-    .contact-card-info {
-        line-height: 0.8lh;
-    }
 }
 
 @media only screen and (min-width: 312px){
@@ -623,16 +663,8 @@
         font-size: 1.5rem;
     }
 
-    .contact-footer {
-        display: block;
-    }
-
     .footer-title {
         font-size: 1.5rem;
-    }
-
-    .contact-card-info h4 {
-        font-size: 0.7rem;
     }
 
     .footer-aboutme h1 {
@@ -650,21 +682,6 @@
     .social-media-footer i {
         font-size: 1.5rem;
         padding: 8px;
-    }
-
-    .contact-card-icon {
-        font-size: large;
-    }
-    
-    .contact-card-info {
-        line-height: 0.8lh;
-    }
-
-    .contact-card {
-        display: grid;
-        grid-template-columns: 0.5fr 2fr;
-        justify-content: flex-start;
-        margin-left: 1.5fr;
     }
     
 }
@@ -722,16 +739,8 @@
         font-size: xx-small;
     }
 
-    .contact-footer {
-        display: block;
-    }
-
     .footer-title {
         font-size: 1.5rem;
-    }
-
-    .contact-card-info h4 {
-        font-size: 0.8rem;
     }
 
     .footer-aboutme h1 {
@@ -751,13 +760,6 @@
         padding: 8px;
     }
 
-    .contact-card-icon {
-        font-size: large;
-    }
-    
-    .contact-card-info {
-        line-height: 0.8lh;
-    }
 }
 
 @media only screen and (min-width: 456px){
@@ -818,16 +820,8 @@
         font-size: 1.5rem;
     }
 
-    .contact-footer {
-        display: block;
-    }
-
     .footer-title {
         font-size: 1.5rem;
-    }
-
-    .contact-card-info h4 {
-        font-size: 0.8rem;
     }
 
     .footer-aboutme h1 {
@@ -847,13 +841,6 @@
         padding: 12px;
     }
 
-    .contact-card-icon {
-        font-size: large;
-    }
-    
-    .contact-card-info {
-        line-height: 0.8lh;
-    }
 }
 
 @media only screen and (min-width: 530px){
@@ -914,16 +901,8 @@
         font-size: 2rem;
     }
 
-    .contact-footer {
-        display: block;
-    }
-
     .footer-title {
         font-size: 2rem;
-    }
-
-    .contact-card-info h4 {
-        font-size: 0.9rem;
     }
 
     .footer-aboutme h1 {
@@ -943,13 +922,6 @@
         padding: 15px;
     }
 
-    .contact-card-icon {
-        font-size: large;
-    }
-    
-    .contact-card-info {
-        line-height: 0.8lh;
-    }
 }
 
 @media only screen and (min-width: 600px){
@@ -1009,17 +981,10 @@
         font-size: 2.2rem;
     }
 
-    .contact-footer {
-        display: block;
-    }
-
     .footer-title {
         font-size: 2.2rem;
     }
 
-    .contact-card-info h4 {
-        font-size: 0.9rem;
-    }
 
     .footer-aboutme h1 {
         font-size: 1.4rem;
@@ -1038,13 +1003,6 @@
         padding: 15px;
     }
 
-    .contact-card-icon {
-        font-size: larger;
-    }
-    
-    .contact-card-info {
-        line-height: 0.9lh;
-    }
 }
 
 @media only screen and (min-width: 744px){
@@ -1105,14 +1063,6 @@
         font-size: 2.2rem;
     }
 
-    .contact-footer {
-        display: block;
-    }
-
-    .contact-card-info h4 {
-        font-size: 1rem;
-    }
-
     .footer-aboutme h1 {
         font-size: 1.8rem;
     }
@@ -1130,13 +1080,6 @@
         font-size: 1.8rem;
     }
 
-    .contact-card-icon {
-        font-size: larger;
-    }
-    
-    .contact-card-info {
-        line-height: 0.9lh;
-    }
 }
 
 @media only screen and (min-width: 888px){
@@ -1197,14 +1140,6 @@
         font-size: 2.5rem;
     }
 
-    .contact-footer {
-        display: block;
-    }
-
-    .contact-card-info h4 {
-        font-size: 1rem;
-    }
-
     .footer-aboutme h1 {
         font-size: 1.8rem;
     }
@@ -1222,14 +1157,6 @@
         font-size: 1.8rem;
     }
 
-
-    .contact-card-icon {
-        font-size: larger;
-    }
-    
-    .contact-card-info {
-        line-height: 0.9lh;
-    }
 }
 
 @media only screen and (min-width: 1000px){
@@ -1290,14 +1217,6 @@
         font-size: 3rem;
     }
 
-    .contact-footer {
-        display: block;
-    }
-
-    .contact-card-info h4 {
-        font-size: 1rem;
-    }
-
     .footer-aboutme h1 {
         font-size: 1.8rem;
     }
@@ -1313,14 +1232,6 @@
 
     .social-media-footer-title h1 {
         font-size: 1.8rem;
-    }
-
-    .contact-card-icon {
-        font-size: larger;
-    }
-    
-    .contact-card-info {
-        line-height: 0.9lh;
     }
 
 }
@@ -1380,32 +1291,6 @@
 
     .plans-title {
         font-size: 3rem;
-    }
-
-    .contact-card-icon {
-        font-size: larger;
-    }
-    
-    .contact-card-info {
-        line-height: 0.9lh;
-    }
-
-    .contact-footer {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-
-    .contact-card-icon {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 12px 20px 12px 15px;
-        font-size: xx-large;
-    }
-
-    .contact-card-info h4 {
-        font-size: 1rem;
     }
 
     .footer-aboutme h1 {
@@ -1485,16 +1370,6 @@
         font-size: 3rem;
     }
 
-    .contact-footer {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-
-    .contact-card-info h4 {
-        font-size: 1rem;
-    }
-
     .footer-aboutme h1 {
         font-size: 1.8rem;
     }
@@ -1568,16 +1443,6 @@
 
     .plans-title {
         font-size: 3rem;
-    }
-
-    .contact-footer {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-
-    .contact-card-info h4 {
-        font-size: 1rem;
     }
 
     .footer-aboutme h1 {
