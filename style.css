@@ -260,6 +260,70 @@
     font-weight: 50;
 }
 
+/*CARD EXERCICIO*/
+
+.container-exercise {
+    display: flex;
+    width: 100%;
+    overflow: scroll;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .card-exercise {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 2rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    transition: 0.5s;
+  }
+  
+  .card-exercise h2 {
+    text-align: center;
+    color: black;
+    font-size: 1.2rem;
+    width: 180px;
+    font-weight: 50;
+    margin: 0;
+  }
+  
+  .card-exercise p {
+    font-size: 1rem;
+    text-align: justify;
+    color: black;
+    font-weight: 50;
+  }
+  
+  .card-exercise img {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid black;
+  }
+  
+  
+  @media only screen and (max-width: 744px){
+  
+    .card-exercise {
+      padding: 0.5rem;
+    }
+  
+    .card-exercise h2 {
+      width: 180px;
+      overflow: auto;
+      font-size: 0.8rem;
+    }
+    
+    .card-exercise p {
+      font-size: 0.8rem;
+    }
+  }
+  
+
 /* PLANS */
 
 .wrapper-plans {
