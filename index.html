@@ -6,28 +6,23 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/3a55913510.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script type="text/javascript" src="script.js"></script>
     <title>Master 1 v2</title>
 </head>
 <body>
 
     <!-- NAVBAR -->
-    <nav>
-        <ul class="navbar">
-            <div class="social-media">
-                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-                <li><a href="#">(64) 9 9275-3873</a></li>
-            </div>
-            
-           <div class="menu">
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Contato</a></li>
-           </div>
+    <header class="header">
+        <a href="" class="logo"><i class="fa-solid fa-dumbbell logo-icon" style="font-size: 2rem; margin-right: 10px;"></i><span style="font-size: 1rem; position: relative; bottom: 3px;">PERSONAL TRAINER</span></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202."><i class="fa-brands fa-whatsapp" style="margin-right: 7px; color: green;"></i>(64) 9 9275-3873</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#valores">Valores</a></li>
+            <li><a href="#contato">Contato</a></li>
         </ul>
-     </nav>
+    </header>
 
     <!-- SLIDE -->
     <div class="slide-wrapper">
@@ -48,9 +43,9 @@
                     <div class="slide-hover-effect"></div>
                     <img class="img-banner" src="img/aboutme.jpg" alt="aboutmea">
                     <div class="slide-text-center">
-                        <p>Fernandes</p>
+                        <p>TEXTO EXEMPLO</p>
                         <br>
-                        <p style="font-size: 50%;">PROFISSIONAL QUALIFICADO</p>
+                        <p style="font-size: 50%;">RESULTADOS GARANTIDOS</p>
                     </div>
                 </div>
 
@@ -73,7 +68,7 @@
     </div>
 
     <!-- VIDEO -->
-    <div class="wrapper-video">
+    <div class="wrapper-video" id="sobre">
         <div class="video">
             <iframe src="https://www.youtube.com/embed/T-Hc97neU94?autoplay=1&mute=1&loop=9999" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen frameborder="0" allowfullscreen uk-responsive uk-video="automute: true"></iframe>
         </div>
@@ -83,11 +78,11 @@
             <p>O melhor, mais moderno, eficiente, seguro, interessante e capaz de atrair e reter até os mais resistentes clientes, que não gostam e têm dificuldades de se manterem ativos definitivamente.</p>
         </div>
     </div>
-
+   
     <!-- PLANS -->
-    <div class="wrapper-plans">
-        <h1 class="plans-title">VALORES</h1>
-        <div class="horizontal-line-black"></div>
+    <div class="wrapper-plans" id="valores">
+        <h1 class="plans-title" >VALORES</h1>
+        <div class="horizontal-line-black" ></div>
         <div class="plans">
             <div class="card-plan card-plan-1">
                 <h1>60 R$</h1>
@@ -169,7 +164,7 @@
                         </div>
                         <div class="contact-card-info">
                             <h4>Endereço:</h4>
-                            <h4>Rua nome de rua, Q.11 N.22 - CEP 75XXX-XXX</h4>
+                            <h4>Rua nome de rua, Q.11 N.22 - 75XXX-XXX</h4>
                         </div>
                     </div>
                 </div>
@@ -184,13 +179,12 @@
                         </p>
                     </div>
                 
-                    <div class="social-media-footer-title">
+                    <div class="social-media-footer-title" id="contato">
                         <h1>Redes Sociais:</h1>
                         <div class="social-media-footer">
                             <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
                             <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
                             <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
                         </div>
                     </div>
                 </div>
